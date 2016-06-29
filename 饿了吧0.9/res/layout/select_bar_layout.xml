@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_ll_select_bar"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:background="@color/xiangyabai"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RadioGroup
+            android:id="@+id/id_rg_top_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/xiangyabai"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/id_rb_top_juli"
+                style="@style/TopTabRadioStyle"
+                android:drawableRight="@drawable/index_title_img_selector"
+                android:text="距离" />
+
+            <RadioButton
+                android:id="@+id/id_rb_top_haoping"
+                style="@style/TopTabRadioStyle"
+                android:drawableRight="@drawable/index_title_img_selector"
+                android:text="好评" />
+
+            <RadioButton
+                android:id="@+id/id_rb_top_renjun"
+                style="@style/TopTabRadioStyle"
+                android:drawableRight="@drawable/index_title_img_selector"
+                android:text="人均" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_iv_gundong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/id_category_selector" />
+
+</LinearLayout>

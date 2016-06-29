@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_rl_fandian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/index_title_color"
+        android:padding="17dp" >
+
+        <TextView
+            android:id="@+id/id_tv_fandian_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确认订单"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入订餐人姓名"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入联系电话"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入就餐人数"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="15sp" />
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入备注信息"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/id_rb_zxzf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/fkfs_selector"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="在线支付"
+            android:textColor="@drawable/black2yellow"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/id_rb_cdfk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/fkfs_selector"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="餐到付款"
+            android:textColor="@drawable/black2yellow"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/id_lv_dingdan_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/id_tv_zongjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="zongjia"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/id_btn_qrdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_select_back"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="确认订餐"
+        android:textColor="@drawable/button_select_text"
+        android:textSize="18sp" />
+
+</LinearLayout>

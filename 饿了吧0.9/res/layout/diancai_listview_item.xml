@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/id_iv_diancai_food_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/food_one" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_tv_diancai_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="茄子炒蛋" />
+
+        <RatingBar
+            android:id="@+id/id_rb_diancai_food_level"
+            style="@style/FoodLevelRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:layout_marginTop="5dp"
+            android:rating="1"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_tv_diancai_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="人均￥10" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="xiangyabai">#f6f5ec</color>
+    <color name="index_title_color">#CC9900</color>
+    <color name="index_four_nav_pressed">#A3A3A3</color>
+    <color name="hei_touming">#464547</color>
+    <color name="jiesuan">#e0861a</color>
+    <color name="red">#ff0000</color>
+    
+</resources>

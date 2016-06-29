@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diancai_img_resource_id">
+        <item>@drawable/food_one</item>
+        <item>@drawable/food_two</item>
+        <item>@drawable/food_three</item>
+        <item>@drawable/food_four</item>
+        <item>@drawable/food_five</item>
+        <item>@drawable/food_six</item>
+        <item>@drawable/food_seven</item>
+    </string-array>
+    
+    <string-array name="diancai_string_food_name">
+        <item>茄子炒蛋</item>
+        <item>茄子炒肉</item>
+        <item>茄子炒鸭肉</item>
+        <item>火腿炒蛋</item>
+        <item>煎蛋饼</item>
+        <item>荷包蛋炒肉</item>
+        <item>爆炒田鸡</item>
+    </string-array>
+    
+    <string-array name="diancai_string_food_level">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+    
+    <string-array name="diancai_string_food_price">
+        <item>10</item>
+        <item>12</item>
+        <item>12</item>
+        <item>8</item>
+        <item>7</item>
+        <item>12</item>
+        <item>15</item>
+    </string-array>
+    
+    <string-array name="operation">
+        <item>我的点菜</item>
+        <item>我的外卖</item>
+        <item>修改个人资料</item>
+        <item>修改密码</item>
+        <item>注销登录</item>
+    </string-array>
+    
+</resources>

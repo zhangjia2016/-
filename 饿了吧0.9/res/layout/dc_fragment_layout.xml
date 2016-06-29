@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/id_rl_fandian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/index_title_color"
+        android:layout_alignParentTop="true"
+        android:padding="17dp" >
+
+        <TextView
+            android:id="@+id/id_tv_fandian_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="饭  店 "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/id_lv_diancai_food"
+        android:layout_below="@id/id_rl_fandian_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"   >
+    </ListView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/hei_touming"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/shuliang"
+                style="@style/JieSuanZiTi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量:" />
+
+            <TextView
+                android:id="@+id/id_tv_food_number"
+                style="@style/JieSuanZiTi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shuliang"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/qian"
+                style="@style/JieSuanZiTi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/id_tv_food_number"
+                android:text="￥" />
+
+            <TextView
+                android:id="@+id/id_tv_food_money"
+                style="@style/JieSuanZiTi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/qian"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/id_tv_peisong_tiaojian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="￥0元起送"
+                android:textColor="#7c8577"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/id_tv_jiesuan"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:background="#e0861a"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="结 算" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xiangyabai"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <RadioGroup
+            android:id="@+id/id_rg_bottom_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/xiangyabai"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/id_rb_bottom_diancai"
+                style="@style/BottomTabRadioStyle"
+                android:drawableLeft="@drawable/bottom_img1_selector"
+                android:text="点菜" />
+
+            <RadioButton
+                android:id="@+id/id_rb_bottom_waimai"
+                style="@style/BottomTabRadioStyle"
+                android:drawableLeft="@drawable/bottom_img2_selector"
+                android:text="外卖" />
+
+            <RadioButton
+                android:id="@+id/id_rb_bottom_my"
+                style="@style/BottomTabRadioStyle"
+                android:drawableLeft="@drawable/bottom_img3_selector"
+                android:text="我的" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
